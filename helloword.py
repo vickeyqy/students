@@ -1,4 +1,7 @@
-#hello.py
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-name = raw_input()
-print 'hellwo,',name
+sum = 0
+for  x in range(101):
+    sum=sum+x
+print sum
