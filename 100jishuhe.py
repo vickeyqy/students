@@ -15,5 +15,20 @@ def bianli():
     trup = ('10','20',['30','40'])
     for a in trup:
         for b in trup(3):
-            print b
-bianbi()
+            print  b
+def myabs(x):
+    if not isinstance(x,int):
+        print '1111'
+    else:
+        print '22222'
+def six():
+    t = ('1','2','3','4')
+    for x in t:
+        print x
+
+def  add(L=None):
+    if L is None:
+        L=[]
+    L.append('end')
+    print L
+
