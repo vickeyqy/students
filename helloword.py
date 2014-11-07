@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+def fact(h):
+    if h==1:
+        return 1
+    else:
+        return h*fact(h-1)
 
-sum = 0
-for  x in range(101):
-    sum=sum+x
-print sum
+a =fact(5)
+print a

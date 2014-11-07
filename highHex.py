@@ -24,5 +24,30 @@ def s(*args):
        for c in (k,v):
             L.append(c)
     print L
+#列表生成式
+T= ['Hello', 'World', 'Apple']
+s = [h.lower() for h in T ]
+#print s
+def o(*args):
+    L = []
+    for  b in T:
+        if isinstance(b,str):
+            c = b.lower()
+            L.append(c)
+        else:
+            L.append(b)
+    print L
+def y(*args):
+    L = [c for x,v in args]
+    print L
 
-s(*args)
+#生成器 斐波那契
+def fib(max):
+    n,a,b = 0,0,1
+    while n<max:
+        yield b
+        a,b = b,a+b
+        n=n+1
+
+for n in fib(6):
+    print n
