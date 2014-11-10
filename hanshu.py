@@ -6,3 +6,4 @@ def  f(x):
 #print L
 
 def mymap ()
+sssssss
