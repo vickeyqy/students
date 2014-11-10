@@ -15,8 +15,11 @@ def h(*args):
        # print k
         for x in k:
             L.append(x)
-    print L
-
+    return  L
+arg = (1,2,3,4,5,6)
+S= h(arg)
+S.append('7')
+print S
 args = [(1, 1), (2, 4), (3, 9)]
 def s(*args):
     L = []
