@@ -18,6 +18,8 @@ def select_sort (seq):
             tmp = seq[pos]
             seq[pos] = seq[i]
             seq[i] = tmp
+def insert_sort(seq):
+
 if __name__ =="__main__":
     list1 = [30,15,25]
     select_sort(list1)
