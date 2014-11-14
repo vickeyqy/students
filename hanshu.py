@@ -28,11 +28,27 @@ def listnum(num):
         L.append(i)
     return L
 
+def fun(a=1, b=None, c=None, *args):
+    print('{0},{1},{2},{3}'.format(a, b, c, args))
+
+def dict(**kw):
+    L = []
+    for k,v in kw.iteritems():
+        L.append(k)
+        L.append(v)
+    return  L
+
+def main():
+    L = []
+    fun('one','one','one',['one','two'])
+    fun('one')
+
 if  __name__ == "__main__":
-    list1=[1,2,3,4,5,6,7,8,9,10]
-    list2 = listnum(1000)
-    mymap(*list1)
-    prod(*list2)
+    D = {'name':'one','age':'25'}
+    S = dict(**D)
+    S.append('123')
+    print S
+
 
 
 
